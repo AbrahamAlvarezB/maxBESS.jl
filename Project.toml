@@ -1,0 +1,22 @@
+name = "maxBESS"
+authors = ["Abraham-Alvarez-B"]
+version = "0.1.0"
+
+[deps]
+AxisKeys = "94b1ba4f-4ee9-5380-92f1-94cde586c3c5"
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+DataFramesMeta = "1313f7d8-7da2-5740-9ea0-a2ca25f37964"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+HiGHS = "87dc4568-4c63-4d18-b0c0-bb2238e4078b"
+JuMP = "4076af6c-e467-56ae-b986-b466b2749572"
+MathOptInterface = "b8f27783-ece8-5eb3-8dc8-9495eed66fee"
+
+[compat]
+HiGHS = "1"
+julia = "1.8"
+
+[extras]
+HiGHS = "87dc4568-4c63-4d18-b0c0-bb2238e4078b"
+MathOptInterface = "b8f27783-ece8-5eb3-8dc8-9495eed66fee"
