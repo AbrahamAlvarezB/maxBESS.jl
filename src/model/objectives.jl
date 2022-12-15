@@ -17,8 +17,8 @@ function obj_raw_profits!(model::Model, price, datetimes, markets)
     pc = model[:pc]
     ex = @expression(
         model,
-        raw_profits,
-        sum(price[m, t] * (pd[m, t] - pc[m, t]) for (m, t) in (markets, datetimes))
+        raw_profits_obj,
+        sum(price[m, t] * (pd[m, t] - pc[m, t]) for m in markets, t in datetimes)
     )
     @objective(model, Max, ex)
     objective_function(model)

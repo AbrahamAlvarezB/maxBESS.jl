@@ -67,3 +67,15 @@ function var_cycles!(model::Model)
     @variable(model, z >= 0)
     return model
 end
+
+"""
+    var_profits_over_time!(model::Model, datetimes)
+
+Variable to storage the profits over time.
+
+"""
+function var_profits_over_time!(model::Model, datetimes)
+    @variable(model, raw_profits[t in datetimes])
+    @variable(model, profits[t in datetimes])
+    return model
+end
